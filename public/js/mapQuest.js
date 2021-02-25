@@ -3,9 +3,11 @@ function initMap() {
 	L.mapquest.key = 'LZ9ZPswAwSg1YkkN0xCeASJPibsaedV2';
 
 // 'map' refers to a <div> element with the ID map
-	L.mapquest.map('map', {
+	var map = L.mapquest.map('map', {
 	  center: [32.8785, -117.2359],
 	  layers: L.mapquest.tileLayer('map'),
-	  zoom: 12
+	  zoom: 12,
+	  zoomControl:false
 	});
+	L.marker[32.88, -117.236].addTo(map);
 }
